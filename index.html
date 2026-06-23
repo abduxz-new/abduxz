@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Abdu-xx — Full Stack Developer & API Architect</title>
+<meta name="description" content="Self-taught Full Stack Developer from Sri Lanka. Production APIs, web apps & bots."/>
+<meta name="og:title" content="Abdu-xx — Full Stack Developer & API Architect"/>
+<meta name="og:description" content="Self-taught dev from Sri Lanka. Production APIs, web apps & bots with 5+ live projects."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="css/base.css"/>
+<link rel="stylesheet" href="css/home.css"/>
+</head>
+<body>
+
+<!-- ICON SPRITE (inline symbols, referenced via <use>) -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <defs>
+    <symbol id="i-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></symbol>
+    <symbol id="i-arrow-up-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M7 7h10v10"/></symbol>
+    <symbol id="i-diamond" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2.7 10.3a2.41 2.41 0 0 0 0 3.41l7.59 7.59a2.41 2.41 0 0 0 3.41 0l7.59-7.59a2.41 2.41 0 0 0 0-3.41L13.7 2.71a2.41 2.41 0 0 0-3.41 0z"/></symbol>
+    <symbol id="i-zap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></symbol>
+    <symbol id="i-server" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></symbol>
+    <symbol id="i-monitor" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></symbol>
+    <symbol id="i-bot" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"/><circle cx="12" cy="5" r="2"/><path d="M12 7v4"/><line x1="8" y1="16" x2="8" y2="16"/><line x1="16" y1="16" x2="16" y2="16"/></symbol>
+    <symbol id="i-database" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3"/></symbol>
+    <symbol id="i-activity" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></symbol>
+    <symbol id="i-cpu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></symbol>
+    <symbol id="i-terminal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></symbol>
+    <symbol id="i-git-branch" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="3" x2="6" y2="15"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><path d="M18 9a9 9 0 0 1-9 9"/></symbol>
+    <symbol id="i-package" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="16.5" y1="9.4" x2="7.5" y2="4.21"/><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></symbol>
+    <symbol id="i-trending-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></symbol>
+    <symbol id="i-map-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></symbol>
+    <symbol id="i-external-link" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></symbol>
+    <symbol id="i-whatsapp" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></symbol>
+    <symbol id="i-telegram" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></symbol>
+    <symbol id="i-youtube" viewBox="0 0 24 24" fill="currentColor"><path d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></symbol>
+    <symbol id="i-coffee" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></symbol>
+    <symbol id="i-api" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 8l-4 4 4 4M17 8l4 4-4 4M14 4l-4 16"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></symbol>
+  </defs>
+</svg>
+
+<!-- CURSOR -->
+<div id="cursor" aria-hidden="true"></div>
+<div id="cursor-ring" aria-hidden="true"></div>
+
+<!-- NAV -->
+<nav id="nav" role="navigation" aria-label="Main navigation">
+  <a href="index.html" class="nav-logo" aria-label="Abdu-xx home">
+    <svg class="icon icon-stroke logo-icon" aria-hidden="true"><use href="#i-diamond"/></svg>
+    Abdu-<em>xx</em>
+  </a>
+
+  <ul class="nav-links" role="list">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+
+  <div class="nav-right">
+    <a href="contact.html" class="nav-cta">
+      <span class="avail-dot" aria-hidden="true"></span>
+      Hire me
+    </a>
+    <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Open menu" aria-expanded="false">
+      <svg class="icon icon-stroke" id="menu-icon" aria-hidden="true"><use href="#i-menu"/></svg>
+      <svg class="icon icon-stroke" id="close-icon" aria-hidden="true" style="display:none"><use href="#i-close"/></svg>
+    </button>
+  </div>
+</nav>
+
+<!-- MOBILE DRAWER -->
+<nav class="nav-drawer" id="nav-drawer" aria-label="Mobile navigation">
+  <a href="#services">Services</a>
+  <a href="#projects">Projects</a>
+  <a href="#about">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="contact.html" class="btn-primary" style="justify-content:center;margin-top:8px">Hire me</a>
+</nav>
+
+<!-- ═══ HERO ═══ -->
+<section class="hero section-pad" id="home" aria-labelledby="hero-heading">
+  <div class="hero-glow-1" aria-hidden="true"></div>
+  <div class="hero-glow-2" aria-hidden="true"></div>
+
+  <!-- Left -->
+  <div class="hero-left fade-up">
+    <div class="hero-eyebrow" aria-label="Location and availability">
+      <svg class="icon icon-stroke" style="width:10px;height:10px;color:var(--green)" aria-hidden="true"><use href="#i-map-pin"/></svg>
+      Kaluthara, Sri Lanka &mdash; Available Now
+    </div>
+
+    <h1 class="hero-title" id="hero-heading">
+      Building digital<br/><em>tools that ship.</em>
+    </h1>
+
+    <p class="hero-desc">
+      I'm <strong>Abdu-xx</strong> &mdash; a self-taught Full Stack Developer &amp; API Architect.
+      I turn ideas into fast, <strong>production-ready applications</strong> used by real people every day.
+    </p>
+
+    <div class="hero-actions">
+      <a href="#projects" class="btn-primary">
+        <svg class="icon icon-stroke" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+        View My Work
+      </a>
+      <a href="contact.html" class="btn-ghost">
+        <svg class="icon icon-stroke" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+        Let's Talk
+      </a>
+    </div>
+  </div>
+
+  <!-- Right -->
+  <div class="hero-right fade-up" style="transition-delay:0.18s">
+    <div class="stat-grid">
+      <div class="stat-card">
+        <div class="stat-icon-wrap" aria-hidden="true">
+          <svg class="icon icon-stroke"><use href="#i-zap"/></svg>
+        </div>
+        <div class="stat-num" data-count="5" data-suffix="+">5+</div>
+        <div class="stat-label">Projects Live</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon-wrap" aria-hidden="true">
+          <svg class="icon icon-stroke"><use href="#i-api"/></svg>
+        </div>
+        <div class="stat-num" data-count="7" data-suffix="+">7+</div>
+        <div class="stat-label">APIs Deployed</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon-wrap" aria-hidden="true">
+          <svg class="icon icon-stroke"><use href="#i-bot"/></svg>
+        </div>
+        <div class="stat-num" data-count="100" data-suffix="+">100+</div>
+        <div class="stat-label">Bot Commands</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon-wrap" aria-hidden="true">
+          <svg class="icon icon-stroke"><use href="#i-trending-up"/></svg>
+        </div>
+        <div class="stat-num" data-count="84" data-suffix="K">84K</div>
+        <div class="stat-label">Req / Month</div>
+      </div>
+    </div>
+
+    <!-- Terminal -->
+    <div class="terminal" role="img" aria-label="Code terminal showing developer profile">
+      <div class="terminal-bar">
+        <span class="t-dot r" aria-hidden="true"></span>
+        <span class="t-dot y" aria-hidden="true"></span>
+        <span class="t-dot g" aria-hidden="true"></span>
+        <span class="terminal-label">abdu-xx &mdash; zsh</span>
+      </div>
+      <div class="terminal-body" aria-hidden="true">
+        <div class="t-line"><span class="t-prompt">&#10095;</span><span class="t-cmd">&nbsp;whoami</span></div>
+        <div class="t-out t-cyan">abdu-xx @fullstack-dev</div>
+        <div class="t-line"><span class="t-prompt">&#10095;</span><span class="t-cmd">&nbsp;cat stack.json</span></div>
+        <div class="t-out">{</div>
+        <div class="t-out">&nbsp;&nbsp;"core": <span class="t-cyan">["Node.js", "React", "MongoDB"]</span>,</div>
+        <div class="t-out">&nbsp;&nbsp;"specialty": <span class="t-cyan">"REST APIs &amp; Bots"</span>,</div>
+        <div class="t-out">&nbsp;&nbsp;"status": <span class="t-green">"available"</span>,</div>
+        <div class="t-out">&nbsp;&nbsp;"location": <span class="t-cyan">"Sri Lanka"</span></div>
+        <div class="t-out">}</div>
+        <div class="t-line"><span class="t-prompt">&#10095;</span><span class="t-cursor" aria-hidden="true"></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ MARQUEE ═══ -->
+<div class="marquee-wrap" aria-hidden="true">
+  <div class="marquee-track">
+    <span class="marquee-item"><svg class="icon icon-stroke marquee-sep" style="width:10px;height:10px;color:var(--gold)"><use href="#i-diamond"/></svg> Node.js</span>
+    <span class="marquee-item"><svg class="icon icon-stroke marquee-sep" style="width:10px;height:10px;color:var(--gold)"><use href="#i-diamond"/></svg> REST APIs</span>
+    <span class="marquee-item"><svg class="icon icon-stroke marquee-sep" style="width:10px;height:10px;color:var(--gold)"><use href="#i-diamond"/></svg> React</span>
+    <span class="marquee-item"><svg class="icon icon-stroke marquee-sep" style="width:10px;height:10px;color:var(--gold)"><use href="#i-diamond"/></svg> MongoDB</span>
+    <span class="marquee-item"><svg class="icon icon-stroke marquee-sep" style="width:10px;height:10px;color:var(--gold)"><use href="#i-diamond"/></svg> WhatsApp Bots</span>
+    <span class="marquee-item"><svg class="icon icon-stroke marquee-sep" style="width:10px;height:10px;color:var(--gold)"><use href="#i-diamond"/></svg> PostgreSQL</span>
+    <span class="marquee-item"><svg class="icon icon-stroke marquee-sep" style="width:10px;height:10px;color:var(--gold)"><use href="#i-diamond"/></svg> Redis</span>
+    <span class="marquee-item"><svg class="icon icon-stroke marquee-sep" style="width:10px;height:10px;color:var(--gold)"><use href="#i-diamond"/></svg> Serverless</span>
+    <span class="marquee-item"><svg class="icon icon-stroke marquee-sep" style="width:10px;height:10px;color:var(--gold)"><use href="#i-diamond"/></svg> Full Stack Dev</span>
+    <span class="marquee-item"><svg class="icon icon-stroke marquee-sep" style="width:10px;height:10px;color:var(--gold)"><use href="#i-diamond"/></svg> API Architecture</span>
+    <!-- duplicate -->
+    <span class="marquee-item"><svg class="icon icon-stroke marquee-sep" style="width:10px;height:10px;color:var(--gold)"><use href="#i-diamond"/></svg> Node.js</span>
+    <span class="marquee-item"><svg class="icon icon-stroke marquee-sep" style="width:10px;height:10px;color:var(--gold)"><use href="#i-diamond"/></svg> REST APIs</span>
+    <span class="marquee-item"><svg class="icon icon-stroke marquee-sep" style="width:10px;height:10px;color:var(--gold)"><use href="#i-diamond"/></svg> React</span>
+    <span class="marquee-item"><svg class="icon icon-stroke marquee-sep" style="width:10px;height:10px;color:var(--gold)"><use href="#i-diamond"/></svg> MongoDB</span>
+    <span class="marquee-item"><svg class="icon icon-stroke marquee-sep" style="width:10px;height:10px;color:var(--gold)"><use href="#i-diamond"/></svg> WhatsApp Bots</span>
+    <span class="marquee-item"><svg class="icon icon-stroke marquee-sep" style="width:10px;height:10px;color:var(--gold)"><use href="#i-diamond"/></svg> PostgreSQL</span>
+    <span class="marquee-item"><svg class="icon icon-stroke marquee-sep" style="width:10px;height:10px;color:var(--gold)"><use href="#i-diamond"/></svg> Redis</span>
+    <span class="marquee-item"><svg class="icon icon-stroke marquee-sep" style="width:10px;height:10px;color:var(--gold)"><use href="#i-diamond"/></svg> Serverless</span>
+    <span class="marquee-item"><svg class="icon icon-stroke marquee-sep" style="width:10px;height:10px;color:var(--gold)"><use href="#i-diamond"/></svg> Full Stack Dev</span>
+    <span class="marquee-item"><svg class="icon icon-stroke marquee-sep" style="width:10px;height:10px;color:var(--gold)"><use href="#i-diamond"/></svg> API Architecture</span>
+  </div>
+</div>
+
+<!-- ═══ SERVICES ═══ -->
+<section class="services section-pad" id="services" aria-labelledby="services-heading">
+  <div class="services-header fade-up">
+    <div>
+      <p class="eyebrow">What I Do</p>
+      <h2 id="services-heading">Services &amp;<br/><em>Expertise</em></h2>
+    </div>
+    <p class="services-desc">Full-spectrum development from database schema to production deployment. I build things that scale, perform, and don't break under load.</p>
+  </div>
+
+  <div class="service-grid fade-up" style="transition-delay:0.12s">
+    <div class="service-card">
+      <div class="service-icon-wrap" aria-hidden="true">
+        <svg class="icon icon-stroke"><use href="#i-server"/></svg>
+      </div>
+      <h3>Back-End Development</h3>
+      <p>REST APIs, Node.js, serverless architecture, and database design for applications that handle real traffic without flinching.</p>
+      <div class="service-badge">
+        <svg class="icon icon-stroke"><use href="#i-check"/></svg>
+        Core Expertise
+      </div>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon-wrap" aria-hidden="true">
+        <svg class="icon icon-stroke"><use href="#i-monitor"/></svg>
+      </div>
+      <h3>Front-End Development</h3>
+      <p>React, Vue, and responsive interfaces. Pixel-precise components with a focus on performance, accessibility, and user experience.</p>
+      <div class="service-badge">
+        <svg class="icon icon-stroke"><use href="#i-check"/></svg>
+        Full Stack
+      </div>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon-wrap" aria-hidden="true">
+        <svg class="icon icon-stroke"><use href="#i-bot"/></svg>
+      </div>
+      <h3>Bot Engineering</h3>
+      <p>WhatsApp and Telegram bots with AI integration, automation workflows, and 100+ custom commands deployed in production.</p>
+      <div class="service-badge">
+        <svg class="icon icon-stroke"><use href="#i-check"/></svg>
+        100+ Commands
+      </div>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon-wrap" aria-hidden="true">
+        <svg class="icon icon-stroke"><use href="#i-database"/></svg>
+      </div>
+      <h3>Database Design</h3>
+      <p>MongoDB, PostgreSQL, and Redis &mdash; optimized schemas, query tuning, indexing strategies, and intelligent caching layers.</p>
+      <div class="service-badge">
+        <svg class="icon icon-stroke"><use href="#i-check"/></svg>
+        Optimized
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ PROJECTS ═══ -->
+<section class="projects-section" id="projects" aria-labelledby="projects-heading">
+  <div class="projects-header fade-up">
+    <div>
+      <p class="eyebrow">Selected Work</p>
+      <h2 id="projects-heading">Featured <em>Projects</em></h2>
+    </div>
+    <a href="projects.html" class="btn-ghost">
+      View All
+      <svg class="icon icon-stroke"><use href="#i-arrow-up-right"/></svg>
+    </a>
+  </div>
+
+  <div class="bento fade-up" style="transition-delay:0.1s">
+    <!-- FEATURED -->
+    <div class="bento-card featured">
+      <span class="bento-badge badge-live">
+        <svg class="icon icon-stroke"><use href="#i-activity"/></svg>
+        Live
+      </span>
+      <div class="bento-icon-wrap" aria-hidden="true">
+        <svg class="icon icon-stroke"><use href="#i-database"/></svg>
+      </div>
+      <h3>DeathBase API</h3>
+      <p>A production-grade REST API delivering historical death statistics, notable figures, and cause-of-death data. Handles unpredictable traffic spikes with zero downtime.</p>
+      <div class="bento-tags">
+        <span class="bento-tag">Node.js</span>
+        <span class="bento-tag">MongoDB</span>
+        <span class="bento-tag">REST</span>
+        <span class="bento-tag">Vercel</span>
+      </div>
+      <div class="bento-stat">
+        <span class="num" data-count="84" data-suffix="K">84K</span>
+        <span class="lbl">requests / month</span>
+      </div>
+    </div>
+
+    <!-- TALL -->
+    <div class="bento-card tall">
+      <span class="bento-badge badge-oss">
+        <svg class="icon icon-stroke"><use href="#i-git-branch"/></svg>
+        Open Source
+      </span>
+      <div class="bento-icon-wrap" aria-hidden="true">
+        <svg class="icon i-github"><use href="#i-github"/></svg>
+      </div>
+      <h3>GitHub Portfolio</h3>
+      <p>128 stars across repositories. Open-source code written to be read, not just to run &mdash; documented, structured, and actively maintained.</p>
+      <div class="bento-tags">
+        <span class="bento-tag">Open Source</span>
+        <span class="bento-tag">128 Stars</span>
+      </div>
+      <div class="bento-stat">
+        <span class="num" data-count="128">128</span>
+        <span class="lbl">GitHub Stars</span>
+      </div>
+      <a href="https://github.com/Abdu-xx" target="_blank" rel="noopener" class="btn-text" style="margin-top:20px">
+        View Repos
+        <svg class="icon icon-stroke"><use href="#i-arrow-right"/></svg>
+      </a>
+    </div>
+
+    <!-- Bot -->
+    <div class="bento-card">
+      <span class="bento-badge badge-api">
+        <svg class="icon icon-stroke"><use href="#i-cpu"/></svg>
+        Bot
+      </span>
+      <div class="bento-icon-wrap" aria-hidden="true">
+        <svg class="icon icon-stroke"><use href="#i-bot"/></svg>
+      </div>
+      <h3>WhatsApp Bot</h3>
+      <p>100+ commands, AI-powered responses, group management automation, and live integrations with third-party APIs.</p>
+      <div class="bento-tags">
+        <span class="bento-tag">Baileys</span>
+        <span class="bento-tag">Node.js</span>
+        <span class="bento-tag">AI</span>
+      </div>
+    </div>
+
+    <!-- Metrics -->
+    <div class="bento-card">
+      <span class="bento-badge badge-api">
+        <svg class="icon icon-stroke"><use href="#i-trending-up"/></svg>
+        Metrics
+      </span>
+      <div class="bento-icon-wrap" aria-hidden="true">
+        <svg class="icon icon-stroke"><use href="#i-zap"/></svg>
+      </div>
+      <h3>API Performance</h3>
+      <p>Sub-second response times maintained under production load, with +23% monthly growth in API consumption.</p>
+      <div class="bento-stat">
+        <span class="num" data-count="1.2" data-suffix="s">1.2s</span>
+        <span class="lbl">avg latency</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ TECH STACK ═══ -->
+<section class="tech-section section-pad" aria-labelledby="tech-heading">
+  <div class="tech-intro fade-up">
+    <p class="eyebrow">My Arsenal</p>
+    <h2 id="tech-heading">The <em>Tech Stack</em></h2>
+    <p>Technologies I reach for when building production systems. Every tool chosen for reliability, performance, and developer experience.</p>
+  </div>
+
+  <div class="tech-grid fade-up" style="transition-delay:0.15s">
+    <div class="tech-item">
+      <div class="tech-icon-wrap" aria-hidden="true"><svg class="icon icon-stroke"><use href="#i-server"/></svg></div>
+      <div class="tech-name">Node.js</div>
+    </div>
+    <div class="tech-item">
+      <div class="tech-icon-wrap" aria-hidden="true"><svg class="icon icon-stroke"><use href="#i-monitor"/></svg></div>
+      <div class="tech-name">React</div>
+    </div>
+    <div class="tech-item">
+      <div class="tech-icon-wrap" aria-hidden="true"><svg class="icon icon-stroke"><use href="#i-database"/></svg></div>
+      <div class="tech-name">MongoDB</div>
+    </div>
+    <div class="tech-item">
+      <div class="tech-icon-wrap" aria-hidden="true"><svg class="icon icon-stroke"><use href="#i-database"/></svg></div>
+      <div class="tech-name">PostgreSQL</div>
+    </div>
+    <div class="tech-item">
+      <div class="tech-icon-wrap" aria-hidden="true"><svg class="icon icon-stroke"><use href="#i-zap"/></svg></div>
+      <div class="tech-name">Redis</div>
+    </div>
+    <div class="tech-item">
+      <div class="tech-icon-wrap" aria-hidden="true"><svg class="icon icon-stroke"><use href="#i-globe"/></svg></div>
+      <div class="tech-name">Vercel</div>
+    </div>
+    <div class="tech-item">
+      <div class="tech-icon-wrap" aria-hidden="true"><svg class="icon icon-stroke"><use href="#i-layers"/></svg></div>
+      <div class="tech-name">Tailwind</div>
+    </div>
+    <div class="tech-item">
+      <div class="tech-icon-wrap" aria-hidden="true"><svg class="icon icon-stroke"><use href="#i-package"/></svg></div>
+      <div class="tech-name">Docker</div>
+    </div>
+    <div class="tech-item">
+      <div class="tech-icon-wrap" aria-hidden="true"><svg class="icon icon-stroke"><use href="#i-terminal"/></svg></div>
+      <div class="tech-name">TypeScript</div>
+    </div>
+    <div class="tech-item">
+      <div class="tech-icon-wrap" aria-hidden="true"><svg class="icon i-github"><use href="#i-github"/></svg></div>
+      <div class="tech-name">GitHub</div>
+    </div>
+    <div class="tech-item">
+      <div class="tech-icon-wrap" aria-hidden="true"><svg class="icon icon-stroke"><use href="#i-cpu"/></svg></div>
+      <div class="tech-name">OpenAI API</div>
+    </div>
+    <div class="tech-item">
+      <div class="tech-icon-wrap" aria-hidden="true"><svg class="icon icon-stroke"><use href="#i-api"/></svg></div>
+      <div class="tech-name">REST APIs</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ ABOUT ═══ -->
+<section class="about-section" id="about" aria-labelledby="about-heading">
+  <div class="about-left fade-up">
+    <p class="eyebrow">About Me</p>
+    <h2 id="about-heading">Self-taught.<br/><em>Self-driven.</em></h2>
+    <p>I'm Abdu-xx &mdash; a developer from Kaluthara, Sri Lanka. I started coding out of pure curiosity and built my way up to shipping production applications used by real people every day.</p>
+    <p>I specialize in API development, bot engineering, and full-stack web apps. I believe in open source, clean maintainable code, and building in public.</p>
+
+    <div class="fact-list">
+      <div class="fact-row">
+        <span class="fact-key">
+          <svg class="icon icon-stroke" aria-hidden="true"><use href="#i-map-pin"/></svg>
+          Location
+        </span>
+        <span class="fact-val">Kaluthara, Sri Lanka</span>
+      </div>
+      <div class="fact-row">
+        <span class="fact-key">
+          <svg class="icon icon-stroke" aria-hidden="true"><use href="#i-zap"/></svg>
+          Status
+        </span>
+        <span class="fact-val"><span class="live-dot" aria-hidden="true"></span> Available for work</span>
+      </div>
+      <div class="fact-row">
+        <span class="fact-key">
+          <svg class="icon icon-stroke" aria-hidden="true"><use href="#i-user"/></svg>
+          Background
+        </span>
+        <span class="fact-val">Self-taught Developer</span>
+      </div>
+      <div class="fact-row">
+        <span class="fact-key">
+          <svg class="icon icon-stroke" aria-hidden="true"><use href="#i-star"/></svg>
+          Focus
+        </span>
+        <span class="fact-val">APIs &middot; Bots &middot; Architecture</span>
+      </div>
+    </div>
+
+    <div class="about-actions">
+      <a href="contact.html" class="btn-primary">
+        <svg class="icon icon-stroke" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+        Work With Me
+      </a>
+      <a href="projects.html" class="btn-ghost">
+        <svg class="icon icon-stroke" aria-hidden="true"><use href="#i-layers"/></svg>
+        My Projects
+      </a>
+    </div>
+  </div>
+
+  <div class="about-right fade-up" style="transition-delay:0.18s">
+    <div class="about-card">
+      <span class="quote-mark" aria-hidden="true">&ldquo;</span>
+      <blockquote>I build for the people who use the product, not for the people who review the code.</blockquote>
+      <p class="quote-attr">Abdu-xx &mdash; Personal Philosophy</p>
+    </div>
+    <div class="about-card highlight">
+      <div class="currently-building-icon" aria-hidden="true">
+        <svg class="icon icon-stroke"><use href="#i-terminal"/></svg>
+      </div>
+      <h3>Currently Building</h3>
+      <p>Exploring new API integrations, contributing to open source, and helping others break into web development from Sri Lanka.</p>
+    </div>
+  </div>
+</section>
+
+<div class="gold-line" aria-hidden="true"></div>
+
+<!-- ═══ FOOTER ═══ -->
+<footer role="contentinfo">
+  <div class="footer-logo">
+    <svg class="icon icon-stroke" aria-hidden="true"><use href="#i-diamond"/></svg>
+    Abdu-xx
+  </div>
+  <p class="footer-copy">
+    &copy; 2026 Abdu-xx &middot; All rights reserved &middot; Built with
+    <svg class="icon icon-stroke" style="width:13px;height:13px;color:var(--gold)" aria-label="coffee"><use href="#i-coffee"/></svg>
+    in Sri Lanka
+  </p>
+  <nav class="footer-socials" aria-label="Social links">
+    <a href="https://github.com/Abdu-xx" target="_blank" rel="noopener" aria-label="GitHub">
+      <svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>
+    </a>
+    <a href="https://wa.me/94776803526" target="_blank" rel="noopener" aria-label="WhatsApp">
+      <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+    </a>
+    <a href="https://t.me/+94776803526" target="_blank" rel="noopener" aria-label="Telegram">
+      <svg class="icon" aria-hidden="true"><use href="#i-telegram"/></svg>
+    </a>
+    <a href="https://youtube.com/@xanz_crush" target="_blank" rel="noopener" aria-label="YouTube">
+      <svg class="icon" aria-hidden="true"><use href="#i-youtube"/></svg>
+    </a>
+  </nav>
+</footer>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
